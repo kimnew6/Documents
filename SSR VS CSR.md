@@ -1,6 +1,6 @@
 ## SSR vs CSR?
 ### SSR
-Server Side Rendering의 약자.
+Server Side Rendering의 약자. <BR>
 서버 쪽에서 렌더링 준비를 끝마친 상태로 클라이언트에 전달하는 방식
 
 

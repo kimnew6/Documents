@@ -2,8 +2,8 @@
 #### SPA(Single Page Application)는 한 개(Single)의 Page로 구성된 Application
 SPA는 웹 에플리케이션에 필요한 모든 정적 리소스(HTML, CSS, JavaScript)를 최초 한 번에 다운로드 <br>
 그 이후 새로운 페이지 요청이 있을 때, 페이지 갱신에 필요한 데이터만 전달 받아서 페이지를 갱신 <br>
-SPA를 CSR(Client Side Rendering) 방식으로 렌더링한다고 말한다.<br>
-MPA를 SSR(Server Side Rendering) 방식으로 렌더링한다고 말한다.<br>
+<b>SPA를 CSR(Client Side Rendering)</b> 방식으로 렌더링한다고 말한다.<br>
+<b>MPA를 SSR(Server Side Rendering)</b> 방식으로 렌더링한다고 말한다.<br>
 즉, 첫 요청시 딱 한 페이지만 불러오고 페이지 이동 시 기존 페이지의 내부를 수정해서 보여주는 방식이다.<br>
 이를 클라이언트 관점에서 말하자면 최초 페이지를 로딩한 시점부터는 페이지 리로딩 없이 필요한 부분만 서버로 부터 받아서 화면을 갱신하는 것이다.<br>필요한 부분만 갱신하기 때문에 네이티브 앱에 가까운 자연스러운 페이지 이동과 사용자 경험(UX)을 제공할 수 있다.<br>
 Angular, React, Vue 등 프론트엔드 기술들이 나오면서 크게 유행하고 있다.

@@ -50,7 +50,7 @@ localStorage.removeItem('birth');
 localStorage.getItem('birth'); // null (삭제됨)
 localStorage.clear(); // 전체 삭제
 ```
-```
+
 ```
 let object = {
 
@@ -63,7 +63,7 @@ let object = {
 "Key" : "Value"
 }
 ```
-```
+
 ```
 localStorage.A (Key == A)
 localStorage.getItem("A")

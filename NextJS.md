@@ -26,7 +26,7 @@ framework는 코드를 불러오는 것(개발자가 게스트). framework에서
 
 #### Styling
 css style은 ```<style jsx>{``}</style>``` 을 사용한다. global style은 ```<style jsx global>{``}</style>```   
-모든 페이지에 적용할 수 있게 하려면, `pages/_app.js` 파일을 만들어서 `<NavBar />` 를 가져오고, `<style jsx global>{``}</style>` 도 적용해 준다. 이때 `_app.js` 파일 이름은 고정되어 있다.
+모든 페이지에 적용할 수 있게 하려면, `pages/_app.js` 파일을 만들어서 `<NavBar />` 를 가져오고, `<style jsx global>{``}</style>` 도 적용해 준다. 이때 `_app.js` 파일 이름은 고정되어 있다. Global Styles css 파일은 커스텀 App 컴포넌트에서 import 가능하다.
 
 
 

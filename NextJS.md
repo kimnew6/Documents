@@ -23,3 +23,9 @@ framework는 코드를 불러오는 것(개발자가 게스트). framework에서
 2. next.js는 그 HTML을 페이지의 소스코드에 넣어준다(SEO에 정말 좋음).
 3. 유저는 자바스크립트와 react.js가 로딩되지 않았더라도 콘텐츠를 볼 수 있게 된다.
 4. react.js가 로딩 되었을 때 기본적으로 존재하는 것들과 연결이 되어서 일반적인 react.js 앱이 된다.
+
+css style은 ```<style jsx>{``}</style>``` 을 사용한다. global style은 ```<style jsx global>{``}</style>```   
+모든 페이지에 적용할 수 있게 하려면, `pages/_app.js` 파일을 만들어서 `<NavBar />` 를 가져오고, `<style jsx global>{``}</style>` 도 적용해 준다. 이때 `_app.js` 파일 이름은 고정되어 있다.
+
+
+

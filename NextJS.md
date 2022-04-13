@@ -28,5 +28,34 @@ framework는 코드를 불러오는 것(개발자가 게스트). framework에서
 css style은 ```<style jsx>{``}</style>``` 을 사용한다. global style은 ```<style jsx global>{``}</style>```   
 모든 페이지에 적용할 수 있게 하려면, `pages/_app.js` 파일을 만들어서 `<NavBar />` 를 가져오고, `<style jsx global>{``}</style>` 도 적용해 준다. 이때 `_app.js` 파일 이름은 고정되어 있다. Global Styles css 파일은 커스텀 App 컴포넌트에서 import 가능하다.
 
+#### img
+img 파일은 public 폴더에서 있는 파일을 `<img src="/vercel.svg" />` 하지만 img태그를 쓰지말고 next/image를 써라고 한다.
+
+#### redirects & rewrites
+```
+// next.config.js
+module.exports = {
+  reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/old-blog/:path*",
+        destination: "/new-blog/:path*",
+        permanent: false,
+      },
+    ];
+  },
+
+  async rewrites() {
+    return [
+      {
+        source: "/api/movies",
+        destination: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`,
+      },
+    ];
+  },
+};
+```
+`redirects()`는 url을 바꾸면서 그 곳으로 이동시켜준다. `rewrites()`는 url을 바꾸지 않고, 그 곳으로 이동시켜준다. 즉 숨기는 것!
 
 
